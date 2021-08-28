@@ -1,0 +1,45 @@
+.contact-us{
+    .contact__content{
+        button{
+            width: 395px;
+            height: 60px;
+            margin-top: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            background: $color-default-darkest;
+            color: $color-default;
+            border: 2px solid $color-default-darkest;
+            &:hover{
+                color: $color-default-darkest;
+                background: $color-default;
+                transition: 0.4s;
+            }
+        }  
+    }
+}
+@media #{$info-phone} {
+    .contact-us {
+        .contact__content {
+            p {
+                padding: 0 10px;
+            }
+            button {
+                margin-top: 30px;
+                width: 300px;
+                height: 48px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media #{$info-phone-4} {
+    .contact-us {
+        .contact__content {
+            button {
+                width: 200px;
+                height: 48px;
+                font-size: 12px;
+            }
+        }
+    }
+}

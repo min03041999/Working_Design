@@ -1,0 +1,20 @@
+.service {
+  background: url('../img/service-bg.png') no-repeat center center;
+  background-size: cover;
+  padding: 125px 0;
+  &__content {
+    p {
+        line-height: 25px;
+        color: $color-default;
+    }
+  }
+}
+@media #{$info-phone} {
+  .service {
+      &__content {
+          p {
+              padding: 0 10px;
+          }
+      }
+  }
+}

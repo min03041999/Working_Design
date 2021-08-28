@@ -1,0 +1,47 @@
+.what-we-do {
+    padding: 110px 0;
+    &__content {
+      .item{
+          margin-top: 100px;
+          img{
+              width: 60px;
+              margin-bottom: 40px;
+          }
+          h3{
+              font-size: 20px;
+              font-weight: bold;
+              letter-spacing: 2px;
+              margin-bottom: 40px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 25px;
+            color: $color-default-dark;
+          }
+      }
+    }
+}
+@media screen and (max-width: 625px) {
+    .what-we-do{
+        .common-section h2:after, .common-section h2:before {
+            border-top: 2px solid #3c3c3c;
+            content: "";
+            position: absolute;
+            top: 50%;
+            -khtml-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: 24%;
+        }
+        .what-we-do__content {
+            .item {
+                margin-top: 50px;
+              p{
+                color: #111;
+                font-size: 11px;
+                line-height: 25px;
+                padding: 0 10px;
+              }
+            }
+        }
+    }
+}
